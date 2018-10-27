@@ -60,6 +60,7 @@ a{
 .contacts{
     /* display: inline-block; */
     padding-top: 20px;
+    padding-right: 10px;;
     font-size: 1.1em;
 }
 
@@ -120,11 +121,17 @@ a{
     float: left; 
 }
 
-.content .left .date, .player{
+.container .content{
+    display: flex;
+    /* flex-direction: row; */
+    justify-content: space-between;
+}
+
+.container .content .left .date, .player{
     padding-left: 70px;
 }
 
-.content .left .date{
+.container .content .left .date{
     color: #66af45;
     font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
 }
@@ -180,6 +187,194 @@ a{
     color: #66af45;
 }
 
+.right .sendform{
+    background-color: rgba(44, 76, 101, 0.4);
+    /* max-width: 330px; */
+    width: 342px;
+    padding: 35px;
+    color: #fff;
+    /* font-weight: 700; */
+    text-align: center;
+}
+
+.sendform_t1{
+    font-weight: 700;
+    font-size: 40px;
+}
+
+.sendform_t2{
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.tb{
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 272px;
+    border: none;
+    padding: 20px;
+    color: #839fb1;
+    font-weight: 600;
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.rb_container{
+    width: 277px;
+    margin: 0 auto;
+    border: 1px solid #fff;
+    border-radius: 25px;
+    padding: 3px;
+    max-height: 49px;
+    /* display: inline-block; */
+    
+}
+
+.rb{
+    display: inline-block;
+    text-align: left;
+    width: 123px;
+    border-radius: 21px;
+    margin: 0px 5px;
+    position: relative;
+    left: -7px;
+    
+}
+
+.rb input{
+    display: none;
+}
+
+.rb label{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    z-index: 2;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 12px;
+    bottom: 8px;
+    left: 58px;
+}
+
+.rb span{
+    width: 20px;
+    height: 20px;
+    position: relative;
+    width: 123px;
+    height: 30px;
+    border-radius: 21px;
+    padding: 0px 0px 29px 137px;
+}
+
+/* .rb span{
+    width: 100px;
+    height: 20px;
+    display: inline-block;
+    position: relative;
+} */
+
+input[type=radio]:checked + span{
+    background-color: #fff;
+    /* padding: 0px 0px 29px 137px; */
+    z-index: 1;
+}
+
+input[type=radio]:checked + span + label{
+    color: #839fb1;
+}
+
+input[type=radio]:checked + span + label:before{
+    display: block;
+}
+
+.rb label:before{
+    display: none;
+    content: '';
+    width: 34px;
+    height: 30px;
+    margin: 1px -5px 0px -42px;
+    float: left; 
+}
+
+.switch1 label:before{
+    background: url(../src/switch1.png) no-repeat;
+}
+
+.switch2 label:before{
+    background: url(../src/switch2.png) no-repeat;
+}
+
+.cb_container{
+    padding: 30px 20px 24px 69px;
+    margin: 0 auto;
+}
+
+.cb_container input{
+    display: none;
+}
+
+.cb_container label{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    /* width: 100%; */
+    text-align: left;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 15px;
+    /* bottom: 8px;
+    left: 58px; */
+}
+
+.cb_container label:before { 
+    background: url(../src/checkbox.png) no-repeat 0 -31px;
+    cursor: pointer;
+    content: '';
+    width: 34px;
+    height: 31px;
+    margin: -1px 10px 0px -44px;
+    float: left; 
+}
+
+input[type=checkbox]:checked + label:before{
+    background: url(../src/checkbox.png) no-repeat 0 0;
+}
+
+.sendbtn button{
+    border: none;
+    cursor: pointer;
+    background-color: #542749;
+    color: #fff;
+    width: 320px;
+    height: 64px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.sendbtn button:hover{
+    background-color: #66af45;
+}
+
+.num_tb{
+    padding: 16px 0px 9px 0px;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.social{
+    color: #426176;
+    margin: 8px auto;
+    text-align: center;
+}
+
+.social span{
+    font-size: 14px;
+}
+
+.scl_crcls a{
+    margin: 0px 5px;
+}
+
 .block2{
     background-color: #fff;
     width: 100%;
@@ -187,7 +382,6 @@ a{
     max-width: 1920px;
     min-height: 981px;
 }
-
 
 @media screen and (max-width: 768px){
     .container{
@@ -201,6 +395,10 @@ a{
         
         /* text-align: center; */
         /* font-weight: 1000; */
+    }
+
+    .contacts{
+        padding-right: 0;
     }
 
     .contacts .email, .tel{
