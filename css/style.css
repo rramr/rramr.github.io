@@ -25,7 +25,8 @@ a{
     text-decoration: none;
 }
 
-.block1, .block2, .block3{
+/* .block3 */
+.block2, .block3, .block4{
     /* display: none !important; */
 }
 
@@ -121,6 +122,8 @@ a{
 .container .content{
     display: flex;
     justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .container .content .left .date, .player{
@@ -394,24 +397,24 @@ input[type=checkbox]:checked + label:before{
 } */
 
 .block2 .line1{
-    height: 283px;
+    min-height: 283px;
 }
 
 .block2 .line2{
-    height: 272px;
+    min-height: 272px;
 }
 
 .block2 .line3{
-    height: 266px;
+    min-height: 266px;
 }
 
 .block2 .line4{
-    height: 143px;
+    min-height: 143px;
 }
 
-.block2 .clear_block{
+/* .block2 .clear_block{
     width: 19.53%;
-}
+} */
 
 .block2 .block_1x{
     box-sizing:border-box;
@@ -480,7 +483,7 @@ input[type=checkbox]:checked + label:before{
     margin: 0;
     width: 100%;
     max-width: 1920px;
-    height: 691px;
+    min-height: 691px;
     display: inline-block;
     margin: 0 auto;
     display: flex;
@@ -490,7 +493,7 @@ input[type=checkbox]:checked + label:before{
 
 .block3 .left, .block3 .right{
     width: 50%;
-    height: 691px;
+    min-height: 691px;
 }
 
 .block3 .left{
@@ -500,15 +503,19 @@ input[type=checkbox]:checked + label:before{
 
 .block3 .right{
     background: url(../src/lecture-r.jpg) no-repeat right top;
+    background-size: cover;
 }
 
 .block3 .right .lecture4you_block{
     padding: 37px 45px;
     color: #fff;
-    
 }
 
-.block3 .right .lecture4you_block h1{
+.block3 .right .adaptive_lecture4you_block{
+    display: none;
+}
+
+.block3 .right  h1{
     font-family: "ProximaNova-Bold", Arial, Helvetica, sans-serif;
     font-size: 47px;
     font-weight: 400;
@@ -553,14 +560,14 @@ input[type=checkbox]:checked + label:before{
     margin: 0 auto;
     width: 100%;
     max-width: 1920px;
-    height: 540px;
+    min-height: 540px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
 
 .block4 .left, .block4 .right{
-    height: 516px;
+    min-height: 516px;
 }
 
 .block4 .left{
@@ -699,7 +706,14 @@ input[type=checkbox]:checked + label:before{
 
 /* end of footer */
 
-@media screen and (max-width: 768px){
+@media screen and (max-width: 812px){
+    
+    /* block 1 */
+    
+    .block1{
+        height: auto;
+    }
+
     .container{
         width: 100%;
     }
@@ -719,4 +733,166 @@ input[type=checkbox]:checked + label:before{
     .contacts .email, .tel{
         display: block;
     }
+
+    .container .content .left{
+        width: 100%;
+    }
+    .container .content .left .date, 
+    .container .content .left .player,
+    .container .content .left .description
+    {
+        padding-left: 3%;
+    }
+
+    .description .yoga{
+        font-size: 20vw;
+    }
+    
+    .description .inspiration{
+        font-size: 7vw;
+    }
+
+    .container .content .left .player{
+        /* width: 100%; */
+        text-align: center;
+    }
+
+    .content .right{
+        width: 100%;
+    }
+    
+    .content .right .sendform{
+        width: 100%;
+        padding: 0;
+    }
+
+    .sendform_t1{
+        padding-top: 5%;
+    }
+
+    .tb{
+        width: 80%;
+    }
+
+    /* end of block 1 */
+
+    /* block 2 */
+
+    .block2 .content{
+        width: 100%;
+    }
+
+    .block2 .block_1x{
+        width: 100%;
+    }
+
+    .block2 .block_2x{
+        width: 100%;
+    }
+    .block2 .clear_block{
+        display: none;
+    }
+
+    .block_2x button{
+        width: 100%;
+    }
+    
+    .block_2x button:hover{
+        background-color: #66af45;
+    }
+    
+    .block_2x span{
+        padding: 5% 0 0 0;
+        width: 100%;
+        text-align: center;
+        align-items: center;
+    }
+
+    /* end of block 2 */
+
+    /* block 3 */
+
+    .block3 .left{
+        display: none;
+    }
+
+    .block3 .right{
+        width: 100%;
+    }
+
+    .block3 .right .lecture4you_block{
+        display: none;
+    }
+
+    .block3 .right .adaptive_lecture4you_block{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 37px 5%;
+        margin: 0px 0px 0px 0px;
+        color: #fff;  
+    }
+    
+    .block3 .right .adaptive_lecture4you_block h1{
+        margin: 0px 0px 50px 0px;
+    }
+
+    .block3 .right .adaptive_lecture4you_block img{
+        width: 125px;
+    }
+
+    .block3 .right .adaptive_lecture4you_block p{
+        padding-bottom: 20px;
+        text-align: center;
+        font-size: 22px;
+        line-height: 26px;
+    }
+
+    /* end of block 3 */
+
+    /* block 4 */
+
+    .block4 .left{
+        display: none;
+    }
+
+    .block4 .right{
+        width: 100%;
+    }
+
+    .block4 .right .intensive_block h1{
+        font-size: 12vw;
+    }
+
+    .block4 .right .intensive_block .learn_more{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .block4 .right .intensive_block .learn_more a{
+        width: 100%;
+        color: #542749;
+    }
+
+    .block4 .right .intensive_block .learn_more button{
+        width: 100%;
+    }
+    
+    .block4 .right .intensive_block .learn_more span{
+        padding: 0;
+        font-size: 3.5vw;
+        padding-top: 35px !important;
+        white-space: nowrap;
+    }
+
+    /* end of block 4 */
+
+    /* footer */
+
+    .footer .footer_info{
+        flex-direction: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    /* end of footer */
 }
