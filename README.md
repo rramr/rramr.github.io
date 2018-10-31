@@ -1,6 +1,4 @@
-# Synergy Lectorium
-
-Landing page for Synergy Lectorium
+[![](https://rramr.github.io/src/logo.png)](http://synergylectorium.ru)
 
 ## Задание
 > Необходимо сверстать landing page на основе макета "design.psd"
@@ -9,3 +7,18 @@ Landing page for Synergy Lectorium
 > С кнопки "Видео" открыть любое видео с youtube в попапе, без перехода, воспроисходим видео сразу после открытия. 
 > Все ссылки кликабельны. С адреса открыть карту на данной точке, попапом или в новой вкладке. 
 > Лендинг должен адаптироваться, при этом максимальный размер 1920px по ширине, если ширина экрана больше то добавить по бокам тень.
+
+## Тестирование сайта
+
+Сайт был протестировани на трех устройствах, которые имеют разное разрешение экрана
+
+| PC (1920x1080)       | MacBook Air 13 (1440x900)        | iPhone SE (640x1136) |
+|:--------------------:|:--------------------------------:|:--------------------:|
+| Firefox 63           | Safari 12                        | Safari 12            |
+| Chrome 70            | Firefox Developer Edition 64.0b5 | Firefox 14           |
+| MS Edge 42           |                                  |                      |
+| Internet Explorer 11 |                                  |                      |
+
+[![](https://rramr.github.io/src/example.png)]
+
+ #### Ссылка для перехода на сайт - [https://rramr.github.io](https://rramr.github.io)
