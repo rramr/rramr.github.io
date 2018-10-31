@@ -7,7 +7,7 @@
     <link rel="icon" href="https://synergy.ru/img/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/font-awesome.min.css">
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.css" />
 </head>
 
 <body>
@@ -28,7 +28,8 @@
                     </div>
                     <div class="adress">
                         <span>Семеновская</span> <br>
-                        <a href="https://yandex.ru/maps/213/moscow/?ll=37.719244%2C55.783600&mode=routes&rtext=~55.783600%2C37.719244&rtt=mt&sll=37.620393%2C55.753960&sspn=2.018738%2C0.685407&text=%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%98%D0%B7%D0%BC%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%92%D0%B0%D0%BB%2C%20%D0%B4%D0%BE%D0%BC%202%2C%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201&z=17">
+                        <a data-fancybox data-type="iframe" data-src="https://2gis.ru/moscow/query/%D0%9C%D0%BE%D1%81%D0%BA%D0%B2%D0%B0%2C%20%D0%98%D0%B7%D0%BC%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%92%D0%B0%D0%BB%2C%20%D0%B4%D0%BE%D0%BC%202%2C%20%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81%201/geo/4504235282654604/to/37.719203%2C55.783712%7C%D0%98%D0%B7%D0%BC%D0%B0%D0%B9%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D0%92%D0%B0%D0%BB%2C%202%7C4504235282654604%7Cgeo?queryState=center%2F37.719203%2C55.783712%2Fzoom%2F16%2FrouteTab"
+                            href="javascript:;">
                             Москва, Измайловский Вал, дом 2, корпус 1
                         </a>
                     </div>
@@ -49,7 +50,7 @@
                         <div class="inspiration">ВДОХНОВЛЕНИЕ<br>НА ПЕРЕМЕНЫ</div>
                     </div>
                     <div class="player">
-                        <a href="">
+                        <a data-fancybox href="https://www.youtube.com/watch?v=U7BLQusiuzM">
                             <i class="fa fa-play-circle" aria-hidden="true"></i>
                         </a>
                     </div>
@@ -58,31 +59,34 @@
                     <div class="sendform">
                         <div class="sendform_t1">ЗАПИСАТЬСЯ</div>
                         <div class="sendform_t2">на практическую лекцию</div>
-                        <input class="tb" name="name" placeholder="Введите ваше имя" required aria-required="true" type="text">
-                        <input class="tb" type="tel" name="phone" placeholder="Введите ваш телефон" required
-                            aria-required="true">
-                        <input class="tb" type="email" name="email" placeholder="Введите ваш e-mail" required
-                            aria-required="true">
-                        <div class="rb_container">
-                            <div class="rb switch1">
-                                <input id="rb1" name="radio1" value="Живое участие" checked type="radio">
-                                <span></span>
-                                <label for="rb1">ЖИВОЕ<br>УЧАСТИЕ</label>
+                        <form action="" method="post">
+                            <input class="tb" name="name" placeholder="Введите ваше имя" required aria-required="true"
+                                type="text"><br>
+                            <input class="tb" type="tel" name="phone" placeholder="Введите ваш телефон" required
+                                aria-required="true"><br>
+                            <input class="tb" type="email" name="email" placeholder="Введите ваш e-mail" required
+                                aria-required="true"><br>
+                            <div class="rb_container">
+                                <div class="rb switch1">
+                                    <input id="rb1" name="radio1" value="Живое участие" checked type="radio">
+                                    <span></span>
+                                    <label for="rb1">ЖИВОЕ<br>УЧАСТИЕ</label>
+                                </div>
+                                <div class="rb switch2">
+                                    <input id="rb2" name="radio1" value="Участие онлайн" type="radio">
+                                    <span></span>
+                                    <label for="rb2">УЧАСТИЕ<br>ОНЛАЙН</label>
+                                </div>
                             </div>
-                            <div class="rb switch2">
-                                <input id="rb2" name="radio1" value="Участие онлайн" type="radio">
-                                <span></span>
-                                <label for="rb2">УЧАСТИЕ<br>ОНЛАЙН</label>
+                            <div class="cb_container">
+                                <input id="cb1" name="checkbox1" value="Согласен получать новости о звездных лекциях и курсах"
+                                    checked type="checkbox">
+                                <label for="cb1">СОГЛАСЕН ПОЛУЧАТЬ НОВОСТИ<br>О ЗВЕЗДНЫХ ЛЕКЦИЯХ И КУРСАХ</label>
                             </div>
-                        </div>
-                        <div class="cb_container">
-                            <input id="cb1" name="checkbox1" value="Согласен получать новости о звездных лекциях и курсах"
-                                checked type="checkbox">
-                            <label for="cb1">СОГЛАСЕН ПОЛУЧАТЬ НОВОСТИ<br>О ЗВЕЗДНЫХ ЛЕКЦИЯХ И КУРСАХ</label>
-                        </div>
-                        <div class="sendbtn">
-                            <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
-                        </div>
+                            <div class="sendbtn">
+                                <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+                            </div>
+                        </form>
                         <div class="num_tb">
                             <span>КОЛИЧЕСТВО МЕСТ ОГРАНИЧЕНО: 200</span>
                         </div>
@@ -127,13 +131,13 @@
             </div>
         </div>
     </div>
-    <div class="block2">
+    <div class="block2 bottom_line_right">
         <div class="content">
             <!-- line 1 -->
             <div class="line1 block_2x">
                 <h2>Что вы узнаете<br>на лекции?</h2>
             </div>
-            <div class="line1 block_1x bottom_line_right clear_block" style="background-color: #fbf9fc"></div>
+            <div class="line1 block_1x clear_block" style="background-color: #fbf9fc"></div>
             <!-- line 2 -->
             <div class="line2 block_1x bottom_line_left" style="background-color: #fbf9fc">
                 <h4>01</h4>
@@ -162,7 +166,7 @@
             </div>
             <!-- line 4 -->
             <div class="line4 block_2x">
-                <a href="">
+                <a data-fancybox data-src="#hidden-form" href="javascript:;">
                     <button>ПРИНЯТЬ УЧАСТИЕ</button>
                 </a>
                 <span>КОЛИЧЕСТВО МЕСТ<br>ОГРАНИЧЕНО: 200</span>
@@ -200,7 +204,8 @@
             <div class="intensive_block">
                 <h1>Трехдневный интенсив</h1>
                 <h2>Лечение и профилактика психосоматических<br>и эндокринных заболеваний методами Бхригу йоги</h2>
-                <p>Вы познакомитесь с особенностями методов и получите пошаговый<br>алгоритм достижения физического и психического благополучия.</p>
+                <p>Вы познакомитесь с особенностями методов и получите пошаговый<br>алгоритм достижения физического и
+                    психического благополучия.</p>
                 <div class="intensive_dates">
                     <div class="dates">
                         <div class="day">11</div>
@@ -222,20 +227,56 @@
                     </div>
                 </div>
                 <div class="learn_more">
-                    <a href="">
+                    <a data-fancybox data-src="#hidden-form" href="javascript:;">
                         <button>УЗНАТЬ БОЛЬШЕ</button>
                     </a>
-                    <span>Вы можете приобрести билет на 1, 2 или 3 дня<br>Запись и дополнительная информация<br>по телефону <strong><a href="tel:+79997683638">+7 999 768 36 38</a></strong></span>
+                    <span>Вы можете приобрести билет на 1, 2 или 3 дня<br>Запись и дополнительная информация<br>по
+                        телефону <strong><a href="tel:+79997683638">+7 999 768 36 38</a></strong></span>
                 </div>
             </div>
         </div>
     </div>
     <div class="footer">
-        <div class="footer_info">
-            <span>&#169; 2016 Synergy Lectorium</span>
-            <a href="">Политика конфиденциальности</a>
+        <span>&#169; Copyright</span>
+        <a href="">Политика конфиденциальности</a>
+    </div>
+    <!-- Скрытая форма -->
+    <div style="display: none;" id="hidden-form">
+        <div class="sendform">
+            <div class="sendform_t1">ЗАПИСАТЬСЯ</div>
+            <div class="sendform_t2">на практическую лекцию</div>
+            <form action="" method="post">
+                <input class="tb" name="name" placeholder="Введите ваше имя" required aria-required="true" type="text">
+                <input class="tb" type="tel" name="phone" placeholder="Введите ваш телефон" required aria-required="true">
+                <input class="tb" type="email" name="email" placeholder="Введите ваш e-mail" required aria-required="true">
+                <div class="rb_container">
+                    <div class="rb switch1">
+                        <input id="rb1_hidden" name="radio1" value="Живое участие" checked type="radio">
+                        <span></span>
+                        <label for="rb1_hidden">ЖИВОЕ<br>УЧАСТИЕ</label>
+                    </div>
+                    <div class="rb switch2">
+                        <input id="rb2_hidden" name="radio1" value="Участие онлайн" type="radio">
+                        <span></span>
+                        <label for="rb2_hidden">УЧАСТИЕ<br>ОНЛАЙН</label>
+                    </div>
+                </div>
+                <div class="cb_container">
+                    <input id="cb1_hidden" name="checkbox1" value="Согласен получать новости о звездных лекциях и курсах"
+                        checked type="checkbox">
+                    <label for="cb1_hidden">СОГЛАСЕН ПОЛУЧАТЬ НОВОСТИ<br>О ЗВЕЗДНЫХ ЛЕКЦИЯХ И КУРСАХ</label>
+                </div>
+                <div class="sendbtn">
+                    <button type="submit">ОТПРАВИТЬ ЗАЯВКУ</button>
+                </div>
+            </form>
+            <div class="num_tb">
+                <span>КОЛИЧЕСТВО МЕСТ ОГРАНИЧЕНО: 200</span>
+            </div>
         </div>
     </div>
+    <script src="//code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.2/dist/jquery.fancybox.min.js"></script>
 </body>
 
 </html>
