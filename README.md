@@ -19,6 +19,6 @@
 | MS Edge 42           |                                  |                      |
 | Internet Explorer 11 |                                  |                      |
 
-[![](https://rramr.github.io/src/example.png)]
+![](https://rramr.github.io/src/example.png)
 
  #### Ссылка для перехода на сайт - [https://rramr.github.io](https://rramr.github.io)
