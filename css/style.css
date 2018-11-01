@@ -100,6 +100,10 @@ a{
     padding-left: 28px;
 }
 
+.contacts .adress .adress_link2{
+    display: none;
+}
+
 .contacts .adress span{
     font-weight: 800;
 }
@@ -873,10 +877,19 @@ a{
     .contacts .email, .tel{
         display: block;
     }
+    
+    .contacts .adress .adress_link1{
+        display: none;
+    }
+
+    .contacts .adress .adress_link2{
+        display: block;
+    }
 
     .container .content .left{
         width: 100%;
     }
+
     .container .content .left .date, 
     .container .content .left .player,
     .container .content .left .description
